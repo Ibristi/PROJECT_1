@@ -31,6 +31,7 @@ function App() {
 	]
 	return (
 		<Card>
+			<div>experiment1</div>
 			<Wrap data={expenses} />
 		</Card>
 	)
