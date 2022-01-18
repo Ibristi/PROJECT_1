@@ -6,14 +6,14 @@ import Card from '../UI/Card'
 function Wrap(props) {
 	return (
 		<Card className='expenses'>
-			{props.data.map((el, id) => {
+			{props.data.map((el) => {
 				return (
 					<ExpenseItem
+						key={Math.random()}
 						title={el.title}
 						amount={el.amount}
 						date={el.date}
-						key={id}
-					/>
+					/>  
 				)
 			})}
 		</Card>

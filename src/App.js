@@ -1,5 +1,6 @@
 import './App.css'
 import Wrap from './components/expenses/Expense'
+import NewExpenses from './components/NewExpenses/NewExpenses'
 import Card from './components/UI/Card'
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 	]
 	return (
 		<Card>
-			<div>experiment1</div>
+			<NewExpenses />
 			<Wrap data={expenses} />
 		</Card>
 	)
